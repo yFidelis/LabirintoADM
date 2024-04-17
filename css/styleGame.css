@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Ethno";
+    src: url("../fonts/ethnocentricrg.otf");
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Ethno;
+    background-color: black;
+    background-image: none;
+}
+.telaJogo {
+    width: 100%;
+    height: 100%;
+}
+
+#modalPopUpPergunta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    text-align: center; 
+    justify-content: flex-end;
+    color: white;
+    visibility: hidden;
+}
+
+.pergunta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #0000ff9f;
+    border: 2px solid white;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.respostas {
+    cursor: pointer;
+    user-select: none;
+    width: 70vw;
+}
+
+.setas_pergunta {
+    width: 1rem;
+    padding: 0 5px;
+    visibility: hidden;    
+}
+
+.respostas:hover .setas_pergunta{
+    visibility: visible;
+}
+
+#modalAcertou {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center; 
+    justify-content: center;
+    align-self: center;
+    color: black;
+    background-color: #66ff009f;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+#modalErrou {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center; 
+    justify-content: center;
+    align-self: center;
+    color: white;
+    background-color: #ff0000;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+
+.closeModalButton {
+    width: 50px;
+    align-self: center;
+    position: absolute;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.closeModalButton:hover {
+    transform: scale(1.2);
+}
+
+#gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/gameOverBG.jpg");
+    background-size: contain;
+    color: white;
+    visibility: hidden;
+}
+
+#gameOver h1 {
+    font-size: 4em;
+}
+
+#winScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../img/gameOverBG.jpg");
+    background-size: contain;
+    color: white;
+    visibility: hidden; 
+}
+
+.buttonsW {
+    display: flex;
+    margin: 20px 0;
+    width: 70vw;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.personagemPergunta {
+    width: 10vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+#voltarDepois {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center; 
+    justify-content: flex-end;
+    color: white;
+    visibility: hidden;
+    align-items: center;
+    background-color: #ff00006c;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
